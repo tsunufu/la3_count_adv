@@ -10,7 +10,7 @@
 - 現在のパスが``~/environment/`` であることを確認
 - ``git clone <各自のレポジトリURL> ``各自の URL は GitHub の右上の緑色の箇所から確認できます
 - ``cd 確認テストのディレクトリ名``で移動
-- ``rake db:create``, ``rake db:migrate``を入力して DB を準備
+- ``bundle install``, ``rake db:create``, ``rake db:migrate``を入力して DB を準備
 - ``ruby app.rb``と入力してちゃんと起動するか確認(できなかったら講師を呼んでね！)
 
 ## 注意事項
