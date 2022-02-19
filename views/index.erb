@@ -7,12 +7,46 @@
     <link rel="stylesheet" href="/assets/css/count.css">
   </head>
   <body>
-    <h1><%= @number %></h1>
+    
+    <% if @number.to_s.include?("3") %>
+      <% if @number % 15 == 0 && @number != 0 %>
+      <h1 style="color: #2a6d39; border: 1px solid #f8b516;"><%= @number %></h1>
+      <% elsif @number % 5 == 0 && @number != 0 %>
+      <h1 style="color: #ec6c1f; border: 1px solid #f8b516;"><%= @number %></h1>
+      <% elsif @number % 3 == 0 && @number != 0 %>
+      <h1 style="color: #d01026; border: 1px solid #f8b516;"><%= @number %></h1>
+      <% else %>
+      <h1 style="color: #edda15; border: 1px solid #f8b516;"><%= @number %></h1>
+      <% end %>
+    <% else %>
+      <% if @number % 15 == 0 && @number != 0 %>
+      <h1 style="color: #2a6d39; border: 1px solid #f8b516;"><%= @number %></h1>
+      <% elsif @number % 5 == 0 && @number != 0 %>
+      <h1 style="color: #ec6c1f; border: 1px solid #d8d8d8;"><%= @number %></h1>
+      <% elsif @number % 3 == 0 && @number != 0 %>
+      <h1 style="color: #d01026; border: 1px solid #f8b516;"><%= @number %></h1>
+      <% else %>
+      <h1 style="color: #edda15; border: 1px solid #d8d8d8;"><%= @number %></h1>
+      <% end %>
+    <% end %>
+      
+      
+    
+    
     <form action="/plus" method="post">
       <input type="submit" value="+">
     </form>
     <form action="/minus" method="post">
       <input type="submit" value="-">
     </form>
+    <form action="/clear" method="post">
+      <input type="submit" value="clear">
+    </form>
+    <form action="/create" method="post">
+      <input type="submit" value="新規作成">
+    </form>
+    
+    <h1></h1>
+    
   </body>
 </html>

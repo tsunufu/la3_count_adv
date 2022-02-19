@@ -8,6 +8,8 @@ body{
     margin: auto;
     /* 全体の余白 */
     padding: 10px;
+    
+    background-color: #00b5de;
 }
 
 /* 数字 */
@@ -27,8 +29,7 @@ h1{
     height: 100px;
     line-height: 100px;
     
-    /* 枠の太さ 線の種類 色 */
-    border: 1px solid #009688;
+    
     
     /* 枠を丸くする */
     border-radius: 50%;
@@ -55,14 +56,34 @@ input{
 input[value="+"]{
     
     /* 文字の色 */
-    color: #f9f9f9;
+    color: #d8d8d8;
     
     /* 背景 */
-    background: #448AFF;
+    background: #e94c4d;
 }
 
 /* マイナスボタン */
 input[value="-"]{
-    color: #f9f9f9;
-    background: #F44336;
+    color: #d8d8d8;
+    background: #c2ca2e;
+}
+
+/*　クリアボタン　*/
+input[value="clear"]{
+    
+    /* 文字の色 */
+    color: #d8d8d8;
+    
+    /* 背景 */
+    background: #f8b516;
+}
+
+/*　カウンタ作成ボタン　*/
+input[value="新規作成"]{
+    
+    /* 文字の色 */
+    color: #d8d8d8;
+    
+    /* 背景 */
+    background: #d01026;
 }
