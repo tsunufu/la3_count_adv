@@ -12,23 +12,23 @@
     
       <% if count.number.to_s.include?("3") %>
         <% if count.number % 15 == 0 && counter.number != 0 %>
-        <h1 style="color: #2a6d39; border: 1px solid #f8b516;"><%= @count %></h1>
+        <h1 style="color: #2a6d39; border: 1px solid #f8b516;"><%= count.number %></h1>
         <% elsif count.number % 5 == 0 && count.number != 0 %>
-        <h1 style="color: #ec6c1f; border: 1px solid #f8b516;"><%= @count %></h1>
+        <h1 style="color: #ec6c1f; border: 1px solid #f8b516;"><%= count.number %></h1>
         <% elsif count.number % 3 == 0 && count.number != 0 %>
-        <h1 style="color: #d01026; border: 1px solid #f8b516;"><%= @count %></h1>
+        <h1 style="color: #d01026; border: 1px solid #f8b516;"><%= count.number %></h1>
         <% else %>
-        <h1 style="color: #edda15; border: 1px solid #f8b516;"><%= @count %></h1>
+        <h1 style="color: #edda15; border: 1px solid #f8b516;"><%= count.number %></h1>
         <% end %>
       <% else %>
         <% if count.number % 15 == 0 && count.number != 0 %>
-        <h1 style="color: #2a6d39; border: 1px solid #f8b516;"><%= @count %></h1>
+        <h1 style="color: #2a6d39; border: 1px solid #f8b516;"><%= count.number %></h1>
         <% elsif count.number % 5 == 0 && count.number != 0 %>
-        <h1 style="color: #ec6c1f; border: 1px solid #d8d8d8;"><%= @count %></h1>
+        <h1 style="color: #ec6c1f; border: 1px solid #d8d8d8;"><%= count.number %></h1>
         <% elsif count.number % 3 == 0 && count.number != 0 %>
-        <h1 style="color: #d01026; border: 1px solid #f8b516;"><%= @count %></h1>
+        <h1 style="color: #d01026; border: 1px solid #f8b516;"><%= count.number %></h1>
         <% else %>
-        <h1 style="color: #edda15; border: 1px solid #d8d8d8;"><%= @count %></h1>
+        <h1 style="color: #edda15; border: 1px solid #d8d8d8;"><%= count.number %></h1>
         <% end %>
       <% end %>
         
