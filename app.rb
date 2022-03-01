@@ -11,7 +11,7 @@ end
 
 
 get '/' do
-  @count = Count.all
+  @count = Count.all.order(:id)
   erb :index
 end
 
